@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Musicon</title>
+    <link rel="stylesheet" href="public/style.css"> <!-- link to the public/style.css sheet -->
+    <script src='handlebars.min.js'></script> <!-- links index.html to the Handlebars library included in handlebars.min.js file -->
+    <script id='templateHB' type='text/x-handlebars-template'><!-- deliver's a Handlebars template to the browser -->
+        <h1>{{title}}</h1>
+        <p>{{body}}</p>
+        <a href="store.html">Shop Now</a>
+    </script> 
+</head>
+
+<body>
+    <header>
+        <section class="container">
+          <h1 class="branding">Musicon</h1>
+  
+          <nav> <!-- The below <li> elements will be the navigation bar links, and are identical within the .html files -->
+            <ul class='navbar'> 
+                <li class='current'><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+  
+        </section>
+      </header>
+  
+      <article id="introduction">
+        <section id="information" class="container"> <!-- this section used to have manual HTML added with <h1>, <p>, and <a> tags, but due to the Handlebars <script> in the <head>, we can now use a Handlebars template to populate this section. The "context" object in main.js has all the properties for the index.html and store.html pages. -->
+
+        </section>
+      </article>
+  
+      <footer>
+        <p>&copy; Musicon</p>
+      </footer>
+      <script src="public/main.js"></script>
+</body>
+</html>
